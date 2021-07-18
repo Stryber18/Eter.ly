@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eter.ly</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main section of website -->
+    <section class="main">
+        <header>
+            <div class="logo">
+                <h2 class="logotitle">Eter.ly</h2>
+            </div>
+            <div class="toggle"></div>
+        </header>
+        <img src="./img/bg67.jpg" class="bg2">
+        <div class="text">
+            <h2>Taste that best,</h2>
+            <h3>its on time</h3><br>
+            <a href="#">Order Now</a>
+        </div>
+        <!-- icon Area -->
+        <ul class="icon">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+    </section>
+    <!-- Menu bar section -->
+    <div class="menu">
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Sign In</a></li>
+        </ul>
+    </div>
+    <script>
+        const clickable = document.querySelector('.toggle');
+        const area = document.querySelector('.main');
+        clickable.addEventListener('click', () => {
+            clickable.classList.toggle('active')
+            area.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
